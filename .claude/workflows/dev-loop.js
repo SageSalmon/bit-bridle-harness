@@ -87,7 +87,7 @@ const VERDICT_SCHEMA = {
   required: ['pass', 'criteria_results', 'summary'],
 }
 
-const REPO = '/Users/bdoss/code/bit-bridle'
+const REPO = '/Users/bdoss/code/bit-bridle-harness'
 
 function keyOf(item) {
   return item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 40)
