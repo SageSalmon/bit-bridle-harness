@@ -33,6 +33,25 @@ bridle
 bridle --workspace ~/code/my-project --prompt "add a --version flag to the CLI"
 ```
 
+In the REPL you get a `›` prompt — type a request in plain English and the
+agent streams its reasoning, shows each tool call (`→ run_bash(...)`), runs it,
+and loops until the task is done. Quit with `exit`, `quit`, or Ctrl-D.
+
+The agent drives GLM-5.2 with five tools, all confined to the `--workspace`
+directory: **read_file**, **write_file**, **edit_file**, **run_bash**, and
+**search**.
+
+## ⚠️ Safety
+
+v1 has **no approval prompts** (it's the first item on the roadmap below). Once
+running, the agent writes files and runs shell commands autonomously inside the
+workspace. So:
+
+- Point `--workspace` at the specific project you want it touching — never your
+  home directory.
+- Prefer a **git repo** as the workspace, so you can review its changes with
+  `git diff` and revert with `git checkout` / `git reset`.
+
 ## How it works
 
 ```
