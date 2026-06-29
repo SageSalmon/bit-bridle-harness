@@ -3,6 +3,7 @@ name = "bit-bridle"
 version = "0.1.0"
 description = "A minimal agentic coding harness for GLM-5.2 (OpenAI-compatible endpoint)"
 readme = "README.md"
+license = "Apache-2.0"
 requires-python = ">=3.10"
 dependencies = [
     "openai>=1.40.0",

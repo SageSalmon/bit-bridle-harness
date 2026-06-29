@@ -75,3 +75,6 @@ window bounded.
 - Token accounting and context compaction
 - MCP tool support
 - Parallel tool execution
+
+## License
+Apache 2.0 — see [LICENSE](LICENSE) for details.
