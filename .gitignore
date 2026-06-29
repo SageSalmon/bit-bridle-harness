@@ -1,6 +1,10 @@
 # Secrets / local config
 .env
 
+# Claude: ignore local state, but commit shared workflows (overrides global gitignore)
+!**/.claude/workflows/
+!**/.claude/workflows/**
+
 # Python
 __pycache__/
 *.py[cod]
